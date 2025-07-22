@@ -1,0 +1,12 @@
+# Risk configuration for the trading bot
+atr_window: 14          # Lookback period for ATR calculation
+stop_multiplier: 1.5    # Stop loss distance in ATR multiples
+max_position_size: 0.02 # Maximum fraction of equity per trade (2%)
+max_daily_risk: 0.05     # Maximum total risk per day (5%)
+volatility_multipliers:
+  low: 1.5
+  normal: 1.0
+  high: 0.5
+no_trade_windows:
+  # FOMC blackout window example (ISO8601 format)
+  - "2025-07-29T00:00:00Z/2025-07-30T23:59:59Z"

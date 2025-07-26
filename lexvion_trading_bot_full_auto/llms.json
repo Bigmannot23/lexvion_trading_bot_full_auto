@@ -1,0 +1,29 @@
+{
+  "name": "Lexvion Trading Bot",
+  "description": "A modular options trading system that connects data ingestion, signal stacking, order preparation and human-in-the-loop execution. By combining automation with operator oversight, it enables disciplined, audit-ready trading.",
+  "usage": [
+    "Install dependencies and set up broker API keys in a `.env` file.",
+    "Run data ingestion scripts to populate caches.",
+    "Review generated signals and adjust the risk profile.",
+    "Approve trades via the CLI or dashboard before execution.",
+    "Inspect Lexvion for audit logs of executed trades."
+  ],
+  "architecture": [
+    "Data ingestion pulls options data, market indicators and custom metrics.",
+    "Signal stacking aggregates heuristics or model outputs to determine candidate trades.",
+    "Order preparation computes size, strike and expiry while applying risk constraints.",
+    "Human approval requires operators to confirm or reject trades.",
+    "Execution sends orders to the broker API and logs evidence via Lexvion."
+  ],
+  "inputs": "Project-specific inputs (see usage)",
+  "outputs": "Project-specific outputs (see usage)",
+  "tags": [
+    "lexvion",
+    "trading",
+    "bot"
+  ],
+  "links": {
+    "repository": "https://github.com/Bigmannot23/lexvion_trading_bot_full_auto",
+    "documentation": "OPERATOR_README.md"
+  }
+}

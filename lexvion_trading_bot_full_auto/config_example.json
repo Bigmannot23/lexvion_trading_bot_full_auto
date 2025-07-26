@@ -1,0 +1,5 @@
+{
+  "max_risk_per_trade": 0.02,
+  "max_open_positions": 5,
+  "signal_threshold": 0.7
+}
